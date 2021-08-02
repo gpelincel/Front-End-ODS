@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    border-bottom: rgba(0, 0, 0, 0.2) 2px solid;
+    background: #1c76cc;
+}
+
+h1#title {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+
+nav {
+    background: #1c76cc;
+    height: 10vh;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    margin-top: 10px;
+    flex-grow: 1;
+    font-size: 50px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s;
+}
+
+i {
+    margin: 3px;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 6px 6px 11px #000;
+    /* o primeiro valor é a distância horizontal da sombra em relação ao elemento, o segundo valor 
+     é a distância vertical da sombra em relação ao elemento, o terceiro valor é o raio da sombra e o #000 é a cor da sombra*/
+}
+
+img#logo {
+    width: 70px;
+    padding: 0 5px;
+    padding-right: 0;
+    background: #1c76cc;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.content {
+    background: #2393FF;
+}
+
+.contentindex {
+    height: 75vh;
+    background: #2393FF;
+}
+
+section {
+    text-align: justify;
+    background: #2393FF;
+    margin: 40px;
+    height: auto;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #505050;
+}
+
+p {
+    font-size: 20px;
+    color: #000;
+}
+
+footer {
+    background: #8ec8ff;
+    height: 5vh;
+}
+
+nav.mobile {
+    display: none;
+}
+
+img {
+    margin: 15px;
+    margin-top: 0;
+    border: #8ec8ff 2px solid;
+    border-radius: 10px;
+}
+
+#img1 {
+    height: 300px;
+    float: right;
+}
+
+img.img4 {
+    height: 400px;
+    float: left;
+}
+
+img.img5 {
+    height: 550px;
+    float: right;
+}
+
+table {
+    border-radius: 10px;
+    width: auto;
+    background: rgba(0, 0, 0, 0.10);
+    padding: 15px;
+    align-self: center;
+    margin: 25px 0;
+    font-size: 20px;
+    margin-left: 30%;
+}
+
+td {
+    margin: 5px;
+}
+
+.tabela td {
+    font-size: 30px;
+    color: #fff;
+}
+
+section.news {
+    text-align: justify;
+    margin: 30px;
+}
+
+a.news {
+    font-size: 40px;
+    color: #303030;
+    margin-bottom: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+a.news:hover {
+    text-shadow: none;
+    color: #DDD;
+}
+
+.news p {
+    font-size: 30px;
+}
+
+section.news img {
+    float: right;
+    height: 280px;
+    border-radius: 15%;
+}
+
+hr {
+    margin: 20px;
+}
+
+span {
+    font-size: 25px;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 30%;
+}
+
+button:focus {
+    outline-style: none;
+}
+
+#mais {
+    display: none;
+}
+
+#mais1 {
+    display: none;
+}
+
+.contentglobal {
+    height: auto;
+    background: #2393FF;
+}
+
+
+/*Media queries*/
+
+
+/*Tablet*/
+
+@media screen and (max-width: 768px) {
+    nav.desktop {
+        display: none;
+    }
+    nav.mobile {
+        display: block;
+        height: 15vh;
+    }
+    .contentindex {
+        height: 75vh;
+    }
+    #img1 {
+        height: 300px;
+    }
+    .img4 {
+        height: 300px;
+    }
+    .img5 {
+        height: 300px;
+        width: 450px;
+    }
+    table {
+        margin: 10px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+    }
+    a.news {
+        font-size: 30px;
+    }
+    button {
+        font-size: 30px;
+        margin-left: 50%;
+    }
+    footer {
+        background: none;
+    }
+    span {
+        font-size: 15px;
+    }
+}
+
+
+/*Smatrphone*/
+
+@media screen and (max-width: 600px) {
+    nav.desktop {
+        display: none;
+    }
+    nav.mobile {
+        display: block;
+        height: 15vh;
+    }
+    .contentindex {
+        height: auto;
+    }
+    #img1 {
+        height: 200px;
+        float: inline-start;
+    }
+    .img4 {
+        height: 300px;
+    }
+    .img5 {
+        display: none;
+    }
+    table {
+        margin: 5px;
+        margin-right: 10px;
+    }
+    footer {
+        background: none;
+    }
+    iframe {
+        width: auto;
+    }
+    section.news img {
+        height: 100px;
+    }
+    section {
+        margin: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+    a.news {
+        font-size: 22px;
+    }
+    button {
+        font-size: 30px;
+        margin-left: 50%;
+    }
+    span {
+        font-size: 15px;
+    }
+}

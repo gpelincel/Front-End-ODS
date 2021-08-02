@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <script src="https://kit.fontawesome.com/a6c7b55f3c.js" crossorigin="anonymous"></script>
+    <title>ODS 6.1</title>
+</head>
+<body>
+    <header>
+    <div class="title">
+        <h1 id="title">ODS</h1>
+        <img id="logo" src="logo.png" alt="logo">
+    </div>
+        <nav class="desktop">
+            <ul>
+                <li><a href="Index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="sobre.html"><i class="fas fa-book-open"></i>Sobre</a></li>
+                <li><a href="global.html"><i class="fas fa-globe"></i>Global</a></li>
+                <li><a href="video.html"><i class="fab fa-youtube"></i>Vídeo</a></li>
+                <li><a href="noticias.html"><i class="far fa-newspaper"></i>Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contentglobal">
+        <section>
+            <h1>NOTÍCIAS</h1>
+            <h2>Leia as últimas notícias sobre o acesso à água potável</h2>
+        </section>
+            <section class="news">
+                <img class="newsimg" src="https://cdn.pixabay.com/photo/2017/09/12/13/21/photovoltaic-system-2742302_960_720.jpg" alt="placa solar">
+                <a class="news" href="https://clickpetroleoegas.com.br/novos-paineis-movidos-a-energia-solar-transformam-vapor-em-agua-potavel/">Novos painéis movidos a energia solar transformam vapor em água potável</a>
+                <h3>A tecnologiaimg que usa nanopartículas que absorvem luz para converter a energia solar diretamente em vapor e em seguida água potável já está ganhando vida, confira!</h3>
+                <hr>
+                <!--A tag "span" é semelhante a tag "div", mas ao invés de ter um formato de bloco possui um formato de linha-->
+                <p><span id="pontos"></span>
+                <span id="mais">A pesquisa dos novos painéis movidos a energia solar que transformam vapor em água potável foi desenvolvida por uma equipe da Rice University. Embora já seja significativamente mais eficiente do que os painéis solares na produção de eletricidade, a tecnologia provavelmente encontrará suas primeiras aplicações em saneamento de baixo custo, purificação de água e tratamento de dejetos humanos para o mundo em desenvolvimento.<br>
+                PARA LER A NOTÍCIA COMPLETA BASTA CLICAR NO TÍTULO!</span></p><br>
+                <button onclick="leiaMais()" id="btnLeiaMais"><i class="fas fa-angle-down"></i></button>
+                <!--A tag "button" cria um botão clicável-->
+                <!--A tag "onclick" necessita ser preenchida com o nome de uma função do JavaScript, esta função será executada quando o botão for clicado-->
+                <script src="script.js"></script>
+                <!--A tag "script" permite inserir um arquivo, ou trecho de código, em JavaScript que interage com o HTML-->
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section class="news">
+                <img class="newsimg" src="https://cdn.pixabay.com/photo/2017/03/02/14/10/digging-2111404_960_720.jpg" alt="encanamento">
+                <a class="news" href="https://www.osaogoncalo.com.br/politica/88075/obras-da-cedae-em-sg-vao-levar-agua-potavel-para-milhares-de-familias-em-diversos-bairros">Obras da CEDAE em SG vão levar água potável para milhares de famílias em diversos bairros</a>
+                <h3>Projetos visam acabar com problema histórico da falta de água na cidade</h3>
+                <hr>
+                <p><span id="pontos1"></span>
+                <span id="mais1">A pesquisa dos novos painéis movidos a energia solar que transformam vapor em água potável foi desenvolvida por uma equipe da Rice University. Embora já seja significativamente mais eficiente do que os painéis solares na produção de eletricidade, a tecnologia provavelmente encontrará suas primeiras aplicações em saneamento de baixo custo, purificação de água e tratamento de dejetos humanos para o mundo em desenvolvimento.<br> Dois projetos importantes da Companhia Estadual de Águas e Esgoto (CEDAE) sairão do papel: a obra de implantação do sistema de abastecimento público de água no bairro Largo da Ideia e a construção do booster de Trindade, beneficiando cerca de 180 mil gonçalenses. A ideia é garantir que toda a região do Largo da Ideia tenha acesso à água potável, acabando com um problema de muitos anos no local que sequer tem tubulação de água, além de estabilizar o fornecimento em 15 bairros, do Boaçu até Palmeiras, com a implantação do booster - uma espécie de "bomba" capaz de regularizar a distribuição da água.<br>
+                PARA LER A NOTÍCIA COMPLETA BASTA CLICAR NO TÍTULO!</span></p><br>
+                <button onclick="leiaMais1()" id="btnLeiaMais1"><i class="fas fa-angle-down"></i></button>
+                <script src="script.js"></script>
+        </section>
+    </div>
+    <footer>
+        <nav class="mobile">
+            <ul>
+                <li><a href="Index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="sobre.html"><i class="fas fa-book-open"></i></a></li>
+                <li><a href="global.html"><i class="fas fa-globe"></i></a></li>
+                <li><a href="video.html"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="noticias.html"><i class="far fa-newspaper"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
